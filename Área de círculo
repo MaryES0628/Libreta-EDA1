@@ -1,0 +1,9 @@
+print("Área de círculo")
+print("Te solicitaré algunos datos para poder obtener el área del cirulo que necesitas")
+a= float(input("Introduzca el valor del radio: "))
+b= float(input("Introduzca el valor de pi: "))
+
+area= (b*(a**2))
+
+print("El área de tu círculo es: ")
+print(area)
