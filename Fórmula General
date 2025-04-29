@@ -1,0 +1,13 @@
+print("Formula general ecuaciones 2o grado")
+print("Recordando que la forrmula general es para operaciones de 2do grado, me daras los valores ordenados")
+a= float(input("Introduzca el valor de a: "))
+b= float(input("Introduzca el valor de b: "))
+c= float(input('Introduzca el valor de c: '))
+
+x1= ((-b+(((b*2)-(4*a*c))*.5))/(2*a))
+x2= ((-b-(((b*2)-(4*a*c))*.5))/(2*a))
+
+print("El resultado de x1 es: ")
+print(x1)
+print("El resultado de x2 es: ")
+print(x2)
