@@ -7,15 +7,26 @@ Asignatura: Estructura de Datos y Algoritmos 1
 Grupo: 11
 No de Práctica(s): 09
 Integrante(s):
-
-Espinoza Saldaña Mariana
-Morales García Andrea Nahomi
-Padilla Martínez Lilia Fernanda
-
+  Espinoza Saldaña Mariana
+  Morales García Andrea Nahomi
+  Padilla Martínez Lilia Fernanda
+  
 No. de lista o brigada: 7
 
 Semestre: 2025-2
-Fecha de entrega: 03/03/2025
+Fecha de entrega: 28/04/2025
 Observaciones:
 
 CALIFICACIÓN: ________________
+
+Objetivo:
+Introducir los fundamentos del lenguaje de programación Python.
+
+Actividades:
+1.- Ejemplo hola mundo
+2.- Fórmula general ecuaciones 2o grado (AKA chicharronera)
+3.- Área de círculo
+4.- Volumen de un cubo (datos dados por el usuario)
+5.- Rebanadas de mantequilla
+6.- De la siguiente lista, mostrar cada uno de los elementos:
+      L = [ 1, 2, 3, 'por', ['py', ['t', 'h', 'o', 'n']]]
