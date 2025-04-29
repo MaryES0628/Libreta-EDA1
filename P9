@@ -24,6 +24,10 @@ Introducir los fundamentos del lenguaje de programación Python.
 
 Actividades:
 1.- Ejemplo hola mundo
+
+print ("Hola Mundito")
+Hola Mundito
+
 2.- Fórmula general ecuaciones 2o grado (AKA chicharronera)
    print("Formula general ecuaciones 2o grado")
 print("Recordando que la forrmula general es para operaciones de 2do grado, me daras los valores ordenados")
@@ -52,6 +56,56 @@ print("El área de tu círculo es: ")
 print(area)
 
 4.- Volumen de un cubo (datos dados por el usuario)
+
+print("Volumen de un cubo")
+lado = float(input("Ingresa la longitud del lado del cubo: "))
+volumen = lado ** 3
+print(f"El volumen del cubo es: {volumen}")
+
+Volumen de un cubo
+Ingresa la longitud del lado del cubo: 2
+El volumen del cubo es: 8.0
+
 5.- Rebanadas de mantequilla
+
+Gatito2 = "Haritt"
+print(Gatito2[:-1])
+print(Gatito2[:2])
+print(Gatito2[:4])
+print(Gatito2[:6])
+print(Gatito2[:-3])
+
+Harit
+Ha
+Hari
+Haritt
+Har
+PS C:\Users\maria> 
+
 6.- De la siguiente lista, mostrar cada uno de los elementos:
       L = [ 1, 2, 3, 'por', ['py', ['t', 'h', 'o', 'n']]]
+L = [1, 2, 3, 'por', ['py', ['t', 'h', 'o', 'n']]]
+
+print(L[0])       # 1
+print(L[1])       # 2
+print(L[2])       # 3
+print(L[3])       # por
+print(L[4][0])    # py
+print(L[4][1][0]) # t
+print(L[4][1][1]) # h
+print(L[4][1][2]) # o
+print(L[4][1][3]) # n
+
+PS C:\Users\maria> & C:/Users/maria/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/maria/OneDrive/Documents/u/Segundo semestre/EDA/python/hola.py"
+1
+2
+3
+por
+py
+t
+h
+o
+n
+PS C:\Users\maria> 
+Conclusión, en esta práctica hemos podido conocer las principales funciones de python, como, el print y como usarlo en acciones sencillas, operaciones matematicas sencillas y cadenas, ademas
+de como acceder individualmente a cada elemento, tmabien, de gran relevancia las estructuraas anidadas.
