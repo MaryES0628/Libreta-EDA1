@@ -20,3 +20,34 @@ CALIFICACIÓN: ________________
 
 Objetivo:
 Aplicar las bases del lenguaje de programación Python en el ambiente de Jupyter notebook
+
+ACTIVIDAD 12.triángulo de asteriscos (while)
+ numero = int(input("Dame un número: "))
+ i = numero
+ while i > 0:
+     print("*" * i)
+   i = i - 1
+
+ACTIVIDAD 13. Triángulo de astericos invertido (while)
+ numero = int(input("Dame un número: "))
+ i = 1
+ while i <= numero:
+     print("* " * i)
+     i = i + 1
+
+ACTIVIDAD 14. Línea de asteriscos (for)
+ numero = int(input("Dame un número: "))
+ for i in range(numero):
+     print("*", end="")
+
+ACTIVIDAD 15. Cuadro de asteriscos (for)
+ numero = int(input("Dame un número: "))
+ for i in range(numero):
+     print("*" * numero)
+
+ACTUIVIDAD 16. Triángulo de asteriscos (for)
+ numero = int(input("Dame un número: "))
+ for i in range(1, numero + 1):
+     print("*" * i)
+
+
