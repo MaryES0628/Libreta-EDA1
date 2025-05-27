@@ -1,0 +1,32 @@
+Práctica 12: RECURSIVIDAD
+
+Profesor(a): José Olivas Díaz
+Asignatura: Estructura de Datos y Algoritmos 1
+Grupo: 11
+No de Práctica(s): 12
+Integrante(s):
+  Espinoza Saldaña Mariana
+  Morales García Andrea Nahomi
+  Padilla Martínez Lilia Fernanda
+  
+No. de lista o brigada: 7
+
+Semestre: 2025-2
+Fecha de entrega: 26/05/2025
+Observaciones:
+
+CALIFICACIÓN: ________________
+
+ las torres de Hanoi.
+
+ def torres_de_hanoi(n, origen, auxiliar, destino):
+    if n == 1:
+        print(f"Mover disco 1 de {origen} a {destino}")
+    else:
+        torres_de_hanoi(n - 1, origen, destino, auxiliar)
+        print(f"Mover disco {n} de {origen} a {destino}")
+        torres_de_hanoi(n - 1, auxiliar, origen, destino)
+
+# Número de discos
+n = 3
+torres_de_hanoi(n, 'A', 'B', 'C')
