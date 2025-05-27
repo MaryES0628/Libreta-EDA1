@@ -1,0 +1,123 @@
+Práctica 11: Estrategias para la construcción de algoritmos
+
+Profesor(a): José Olivas Díaz
+Asignatura: Estructura de Datos y Algoritmos 1
+Grupo: 11
+No de Práctica(s): 11
+Integrante(s):
+  Espinoza Saldaña Mariana
+  Morales García Andrea Nahomi
+  Padilla Martínez Lilia Fernanda
+  
+No. de lista o brigada: 7
+
+Semestre: 2025-2
+Fecha de entrega: 26/05/2025
+Observaciones:
+
+CALIFICACIÓN: ________________
+
+Ejercicio 1
+def candado(secreto):
+    intentos = 0
+    for combinacion in range(50):  # 00 al 49
+        intentos += 1
+        if combinacion == numero_secreto:
+            print(f"🔓 La combinación es: {combinacion:03d}")
+            print(f"🔁 Número de intentos: {intentos}")
+            return
+    print("No se pudo encontrar la combinación.")
+
+numero_secreto = 28
+candado(numero_secreto)
+
+Ejercicio 2 
+Determinar si un número es primo
+n = 17
+es_primo = True
+
+if n < 2:
+    es_primo = False
+else:
+    for i in range(2, n):
+        if n % i == 0:
+            es_primo = False
+            break
+
+if es_primo:
+    print("Primo")
+else:
+    print("No primo")
+
+
+Factorial top down
+memo = {}
+
+def factorial(n):
+    if n in memo:
+        return memo[n]
+    if n == 0 or n == 1:
+        return 1
+    memo[n] = n * factorial(n - 1)
+    return memo[n]
+
+print(factorial(5))
+
+
+
+
+
+
+
+
+
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2
+        left_half = arr[:mid]
+        right_half = arr[mid:]
+        merge_sort(left_half)
+        merge_sort(right_half)
+        i = j = k = 0
+        while i < len(left_half) and j < len(right_half):
+            if left_half[i] < right_half[j]:
+                arr[k] = left_half[i]
+                i += 1
+            else:
+                arr[k] = right_half[j]
+                j += 1
+            k += 1
+        while i < len(left_half):
+            arr[k] = left_half[i]
+            i += 1
+            k += 1
+        while j < len(right_half):
+            arr[k] = right_half[j]
+            j += 1
+            k += 1
+lista = [30, 2, 22, 42, 6, 75, 18, 16, 19]
+print("Lista original:", lista)
+merge_sort(lista)
+print("Lista ordenada:", lista)
+
+Ejercicio 3
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1  # Caso base
+    else:
+        return n * factorial(n - 1)  
+print("5! =", factorial(5))  # Resultado: 120
+
+
+Ejercicio 4 
+#Factorial Bottom-up
+def bottom_up(n):
+    factorial = 1
+    for i in range(2, n + 1):
+        factorial *= i
+    return factorial
+
+n = int(input("Ingresa un número: "))
+print(f"El factorial de {n} es: {bottom_up(n)}")
+
+
